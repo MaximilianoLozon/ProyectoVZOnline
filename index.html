@@ -11,11 +11,10 @@
 <body>
   <header>
     <nav>
-      <a href="#">inicio</a>
-      <a href="#">sobre nosotros</a>
-      <a href="#">portafolio</a>
-      <a href="#">servicios</a>
-      <a href="#">contacto</a>
+      <a href="#sobre-mi">sobre mi</a>
+      <a href="#portafolio">portafolio</a>
+      <a href="#servicios">servicios</a>
+      <a href="#contacto">contacto</a>
     </nav>
     <section class="textos-header">
       <h1>VZOnline</h1>
@@ -24,7 +23,7 @@
     <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.54,148.53 C-1.97,38.98 197.80,251.16 500.84,-0.47 L500.00,150.00 L-2.54,145.56 Z" style="stroke: none; fill: rgba(255, 0, 200, 0.334); --darkreader-inline-stroke:none; --darkreader-inline-fill:#33a6ff;" data-darkreader-inline-stroke="" data-darkreader-inline-fill=""></path></svg></div>
   </header>
   <main>
-    <section class="contenedor sobre-nosotros">
+    <section class="contenedor sobre-nosotros" id="sobre-mi">
       <h2 class="titulo">Acerca de mí</h2>
       <div class="contenedor-sobre-nosotros">
         <img src="./img/imagen-sobre-nosotros.jpg" alt="" class="imagen-sobre-nosotros">
@@ -37,17 +36,17 @@
             Me gusta abordar nuevos desafíos ya que gracias a eso aprendo continuamente y es una de las cosas que más 
             me gusta hacer!</p>
           <h3>Ventajas de trabajar juntos</h3>
-          <p><span>&#10003</span>Optimización: Mejoro la integridad de tus redes, optimizo, diseño, identidad. contenido y biografía
+          <p><span>&#10003</span>Optimización: Mejoro la integridad de tus redes, optimizo, diseño identidad visual, contenido y biografía
             para que empieces a obtener resultados.</p>
           <p><span>&#10003</span>Creación de contenidos: Me encargo de tu cuenta, deesde el nacimiento de la idea para tus contenidos hasta la publicación
             según tus objetivos para que no tengas que preocuparte más sobre "¿qué publicar?</p>
-          <p><span>&#10003</span>Identidad visual:Puedo crear desde cero una identidad visual para tu marca, que sea representativa y adaptable.
-            Diseño las piezas gráficas para tus redes: posteos,reels,destacadas,historia, etc.</p>
+          <p><span>&#10003</span>Identidad visual: Puedo crear desde cero una identidad visual para tu marca, que sea representativa y adaptable.
+            Diseño las piezas gráficas para tus redes: posteos, reels, destacadas, historias, etc.</p>
           <p>Las redes te dan la oportunidad y las herramientas necesarias para generar un vínculo cercano con tus seguidores,
             aumentando las posibilidades de ganar futuros clientes y de fidelizar a los que ya te eligieron.
             Me acerco a tus seguidores compartiendo información y contenido entretenido, de forma periódica y 
             trabajaré para alcanzar los mejores resultados. ¿La razón? Entiendo que el crecimiento de tu marca, es el mío.</p>
-            <h3>Formacion</h3>
+            <h3>Formación</h3>
             <p><span>&#10003</span>Community Manager | Luzzi Digital</p>
             <p><span>&#10003</span>Marketing Digital | JA Américas & Google </p>
             <p><span>&#10003</span> Certificación de Publicidad en Búsqueda de Google Ads | Google </p>
@@ -55,7 +54,7 @@
           </div>
       </div>
     </section>
-    <section class="portafolio">
+    <section class="portafolio" id="portafolio">
       <div class="full-img" id="fullImgBox">
           <img src="" id="fullimg">
           <span onclick="closeImg()">x</span>
@@ -108,7 +107,7 @@
         </div>
       </div>
     </section>
-    <section class="about-service">
+    <section class="about-service" id="servicios">
       <div class="contenedor">
         <h2 class="titulo">Nuestros servicios</h2>
         <div class="servicio-cont">
@@ -126,7 +125,7 @@
               Inshot
               Picsart
               Remini
-              Lightroom</p>
+              Lightroom, entre otras.</p>
           </div>
           <div class="servicio-ind">
             <img src="./img/habilidades.jpg" alt="">
@@ -136,22 +135,22 @@
               Organización
               Planificación
               Buena comunicación
-              Curiosidad</p>
+              Curiosidad.</p>
           </div>
           <div class="servicio-ind">
             <img src="./img/funciones.jpg" alt="">
             <h3>Funciones</h3>
-            <p>Planificación, calendarización y programación de contenido
-              Seguimiento y análisis de métricas
-              Creación y diseño de contenido gráfico
-              Gestión de comunidad
+            <p>Planificación, calendarización y programación de contenido |
+              Seguimiento y análisis de métricas |
+              Creación y diseño de contenido gráfico |
+              Gestión de comunidad |
               Redacción de copys</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer id="contacto">
     <div class="contenedor-footer">
       <div class="content-foo">
         <h4>Phone</h4>
@@ -163,11 +162,11 @@
       </div>
       <div class="content-foo">
         <h4>LinkedIn</h4>
-        <p>https://www.linkedin.com/in/victoria-zulueta/</p>
+        <a ref="https://www.linkedin.com/in/victoria-zulueta" target="_blank">Victoria</a>
       </div>
       <div class="content-foo">
         <h4>Instagram</h4>
-        <p>@_vzonline</p>
+        <a ref="https://www.instagram.com/_vzonline/" target="_blank">_VZOnline</a>
       </div>
     </div>
     <h2 class="titulo-final">&copy;Maximiliano Lozon dev | maxi.lozon@gmail.com</h2>
