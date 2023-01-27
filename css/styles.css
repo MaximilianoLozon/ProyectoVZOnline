@@ -253,6 +253,7 @@ footer{
     color: #ffff;
 }
 .content-foo a{
+    text-decoration: none;
     color: #ffff;
 }
 .titulo-final{
@@ -342,6 +343,11 @@ footer{
             border: none;
         }
         .content-foo p{
+            color: #ccc;
+            border-bottom: 1px solid orange;
+            padding-bottom: 20px;
+        }.content-foo a{
+            text-decoration: none;
             color: #ccc;
             border-bottom: 1px solid orange;
             padding-bottom: 20px;
