@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="./img/staricon.svg">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">inicio</a>
+      <a href="#">sobre nosotros</a>
+      <a href="#">portafolio</a>
+      <a href="#">servicios</a>
+      <a href="#">contacto</a>
+    </nav>
+    <section class="textos-header">
+      <h1>VZOnline</h1>
+      <h2>servicios de marketing digital</h2>
+    </section>
+    <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.54,148.53 C-1.97,38.98 197.80,251.16 500.84,-0.47 L500.00,150.00 L-2.54,145.56 Z" style="stroke: none; fill: rgba(255, 0, 200, 0.334); --darkreader-inline-stroke:none; --darkreader-inline-fill:#33a6ff;" data-darkreader-inline-stroke="" data-darkreader-inline-fill=""></path></svg></div>
+  </header>
+  <main>
+    <section class="contenedor sobre-nosotros">
+      <h2 class="titulo">Acerca de mí</h2>
+      <div class="contenedor-sobre-nosotros">
+        <img src="./img/imagen-sobre-nosotros.jpg" alt="" class="imagen-sobre-nosotros">
+        <div class="contenido-textos">
+          <h3>¡Hola, soy Victoria!</h3>
+          <p>Me defino como una community creativa, responsable y organizada.
+            Me actualizo constantemente sobre las tendencias, nuevas funciones de las diferentes redes sociales 
+            y aprendo a utilizar nuevas herramientas que me ayuden a ser más productiva para poder ayudar
+            a las marcas a cumplir sus objetivos.
+            Me gusta abordar nuevos desafíos ya que gracias a eso aprendo continuamente y es una de las cosas que más 
+            me gusta hacer!</p>
+          <h3>Ventajas de trabajar juntos</h3>
+          <p><span>&#10003</span>Optimización: Mejoro la integridad de tus redes, optimizo, diseño, identidad. contenido y biografía
+            para que empieces a obtener resultados.</p>
+          <p><span>&#10003</span>Creación de contenidos: Me encargo de tu cuenta, deesde el nacimiento de la idea para tus contenidos hasta la publicación
+            según tus objetivos para que no tengas que preocuparte más sobre "¿qué publicar?</p>
+          <p><span>&#10003</span>Identidad visual:Puedo crear desde cero una identidad visual para tu marca, que sea representativa y adaptable.
+            Diseño las piezas gráficas para tus redes: posteos,reels,destacadas,historia, etc.</p>
+          <p>Las redes te dan la oportunidad y las herramientas necesarias para generar un vínculo cercano con tus seguidores,
+            aumentando las posibilidades de ganar futuros clientes y de fidelizar a los que ya te eligieron.
+            Me acerco a tus seguidores compartiendo información y contenido entretenido, de forma periódica y 
+            trabajaré para alcanzar los mejores resultados. ¿La razón? Entiendo que el crecimiento de tu marca, es el mío.</p>
+            <h3>Formacion</h3>
+            <p><span>&#10003</span>Community Manager | Luzzi Digital</p>
+            <p><span>&#10003</span>Marketing Digital | JA Américas & Google </p>
+            <p><span>&#10003</span> Certificación de Publicidad en Búsqueda de Google Ads | Google </p>
+            <p><span>&#10003</span>Certificación de video de Google Ads | Google</p>
+          </div>
+      </div>
+    </section>
+    <section class="portafolio">
+      <div class="full-img" id="fullImgBox">
+          <img src="" id="fullimg">
+          <span onclick="closeImg()">x</span>
+        </div>
+      <div class="contenedor">
+        <h2 class="titulo">Portafolio</h2>
+        <div class="galeria-port">
+          <div class="imagen-port">
+            <img src="./img/img1clic.jpg" alt="./img/imgexpand1clic.jpg" onclick="openImg(this.alt)">
+            <div class="hover-galeria" >
+              <img src="./img/vzonline.png" alt="">
+              <p>nuestro trabajo</p>
+            </div>
+          </div>
+          <div class="imagen-port">
+            <img src="./img/img2clic.jpg" alt="./img/imgexpand2clic.jpg" onclick="openImg(this.alt)">
+            <div class="hover-galeria">
+              <img src="./img/vzonline.png" alt="">
+              <p>nuestro trabajo</p>
+            </div>
+          </div>
+          <div class="imagen-port">
+            <img src="./img/img3clic.jpg" alt="./img/imgexpand3clic.jpg" onclick="openImg(this.alt)">
+            <div class="hover-galeria" >
+              <img src="./img/vzonline.png" alt="">
+              <p>nuestro trabajo</p>
+            </div>
+          </div>
+          <div class="imagen-port">
+            <img src="./img/img4clic.jpg" alt="./img/imgexpand4clic.jpg" onclick="openImg(this.alt)">
+            <div class="hover-galeria" >
+              <img src="./img/vzonline.png" alt="">
+              <p>nuestro trabajo</p>
+            </div>
+          </div>
+          <div class="imagen-port">
+            <img src="./img/img5clic.jpg" alt="./img/imgexpand5clic.jpg" onclick="openImg(this.alt)">
+            <div class="hover-galeria">
+              <img src="./img/vzonline.png" alt="">
+              <p>nuestro trabajo</p>
+            </div>
+          </div>
+          <div class="imagen-port">
+            <img src="./img/img6clic.jpg" alt="./img/imgexpand6clic.jpg" onclick="openImg(this.alt)">
+            <div class="hover-galeria">
+              <img src="./img/vzonline.png" alt="">
+              <p>nuestro trabajo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-service">
+      <div class="contenedor">
+        <h2 class="titulo">Nuestros servicios</h2>
+        <div class="servicio-cont">
+          <div class="servicio-ind">
+            <img src="./img/herramientas.jpg" alt="">
+            <h3>Herramientas</h3>
+            <p>CapCut
+              Paquete Office
+              Canva
+              VSCO
+              Photoroom
+              Pinterest
+              Snapseed
+              Pexels
+              Inshot
+              Picsart
+              Remini
+              Lightroom</p>
+          </div>
+          <div class="servicio-ind">
+            <img src="./img/habilidades.jpg" alt="">
+            <h3>Habilidades</h3>
+            <p>Creatividad
+              Buena redacción
+              Organización
+              Planificación
+              Buena comunicación
+              Curiosidad</p>
+          </div>
+          <div class="servicio-ind">
+            <img src="./img/funciones.jpg" alt="">
+            <h3>Funciones</h3>
+            <p>Planificación, calendarización y programación de contenido
+              Seguimiento y análisis de métricas
+              Creación y diseño de contenido gráfico
+              Gestión de comunidad
+              Redacción de copys</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <h4>Phone</h4>
+        <p>+5492364533088</p>
+      </div>
+      <div class="content-foo">
+        <h4>Email</h4>
+        <p>zuluetavictoria99@gmail.com</p>
+      </div>
+      <div class="content-foo">
+        <h4>LinkedIn</h4>
+        <p>https://www.linkedin.com/in/victoria-zulueta/</p>
+      </div>
+      <div class="content-foo">
+        <h4>Instagram</h4>
+        <p>@_vzonline</p>
+      </div>
+    </div>
+    <h2 class="titulo-final">&copy;Maximiliano Lozon dev | maxi.lozon@gmail.com</h2>
+  </footer>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

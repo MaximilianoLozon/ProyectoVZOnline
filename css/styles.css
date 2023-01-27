@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;1,900&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilo en la scrollbar*/
+/* Works on Firefox 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background:#D38312 ;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color:#D38312;
+  border-radius: 20px;
+  border: 3px solid #a83279;
+}
+body{
+    font-family: 'open sans';
+    background: #D38312;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A83279, #D38312); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(168, 50, 121), rgb(211, 131, 18)); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*en todos los contenedores; generamos un espacio hacia arriba y abajo para que las secciones no se nos junten*/
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;/*si algo se sale del contenedor se esconde*/
+}
+/*configuramos todos los titulos con el mismo estilo*/
+.titulo{
+    color: yellow;
+    font-size: 30px;
+    text-align: center; /*todos centrados*/
+    margin-bottom: 60px;/*para distinguirlo del contenido de cada seccion*/
+}
+/* header */
+header{
+    width: 100%;
+    height: 600px;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(35, 97%, 63%, 0.414), hsla(0, 98%, 55%, 0.317), hsla(276, 51%, 47%, 0.311));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(35, 97%, 63%, 0.414), hsla(0, 98%, 55%, 0.317), hsla(276, 51%, 47%, 0.311)),url(../img/arreglos_remoto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;/*barra de navegacion arriba a la derecha*/
+    padding: 30px 50px 0 0;/*arriba 30, abajo 50*/
+}
+nav > a{ /*los hijos de nav*/
+    color:yellow;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+nav > a:hover{
+    color: #D38312; /*cuando le paso el cursor el texto cambia de color*/
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;/*separamos los textos en dos filas de la misma columna*/
+}
+.textos-header h1{
+    font-size: 50px;
+    color:yellow;
+}
+.textos-header h2{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.wave{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+/* about us*/
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-sobre-nosotros{
+    width: 48%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    padding: 0 0 15px 15px;
+    margin-bottom: 15px;
+}
+.contenido-textos p span{
+    background: #833ab4;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 2px;
+    margin-right: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+.contenido-textos p{
+    padding: 0 0 15px 15px;
+    text-align: justify;
+    font-weight: 300;
+}
+/*galaeria*/
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 32%;
+    margin-bottom: 10px;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);/*sombra*/
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    scale: 1;
+}
+/*.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+}
+.hover-galeria img{
+    width: 120px;
+}
+.hover-galeria p{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}*/
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0,0.9);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    z-index: 99;
+}
+.full-img span{
+    top: 5%;
+    right: 5%;
+    color: #fff;
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+}
+.full-img img{
+    width:90;
+    max-width:800px;
+}
+/* about service*/
+.about-service{
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 30%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 90%;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+/*footer*/
+footer{
+    background: #45022a;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;     /*para desplegar los elementos a lo ancho de la pagina*/
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid yellow;
+}
+.content-foo h4{
+    color:#ffffff;
+    border-bottom: 3px solid #D38312; /*linea para separar los elementos h4 y p*/
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.content-foo p{
+    color: #ffff;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin:20px 0 0 0;
+    color: #ccc;
+}
+/*responsive*/
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column; /*posicionamos el contenido de arriba hacie abajo*/
+        justify-content: center; /*y lo centramos*/
+        align-items: center;
+    }
+    .imagen-sobre-nosotros{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    /*galeria*/
+    .imagen-port{
+        width: 48%;
+    }
+    /*servicios*/
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;    /*a los primeros dos elementos solamente, ya que el segundo tiene el espaciado de la seccion*/
+    }
+    .servicio-ind img{
+        width: 90%;
+    }
+    @media screen and (max-width:500px){
+        nav{
+            text-align: center;
+            padding: 30px 0 0 0;
+        }
+        nav > a{
+            margin-right: 5px;
+        }
+        header{
+            background-position: center;
+        }
+        .textos-header h1{
+            font-size: 35px;
+        }
+        .textos-header h2{
+            font-size: 20px;
+        }
+        /*about us*/
+        .imagen-sobre-nosotros{
+            margin-bottom: 60px;
+            width: 99%;
+        }
+        .sobre-nosotros .contenido-textos{
+            width: 95%;
+        }
+        /*galeria*/
+        .imagen-port{
+            width: 99%;
+        }
+        /*footer*/
+        .contenedor-footer{
+            flex-direction: column;
+            border: none;
+        }
+        .content-foo{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content-foo h4{
+            border: none;
+        }
+        .content-foo p{
+            color: #ccc;
+            border-bottom: 1px solid orange;
+            padding-bottom: 20px;
+        }
+        .titulo-final{
+            font-size: 20px;
+        }
+    }
+}
